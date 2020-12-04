@@ -1,0 +1,91 @@
+.hero {
+  text-align: center;
+  padding-top: 118px;
+  padding-left: 60px;
+  padding-right: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 200px;
+  }
+}
+
+.overlay {
+  height: 400px;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+    ),
+    url("../image/hero.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 480px) {
+    width: 480px;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+    height: 600px;
+  }
+}
+
+.container-hero {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media screen and (min-width: 480px) {
+    width: 360px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 696px;
+  }
+}
+
+.page-title {
+  font-size: 26px;
+  line-height: 1.62;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: $white;
+
+  @media screen and (min-width: 1200px) {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+  }
+}
+
+// Кнопка "Заказать услугу"
+.btn-hero {
+  @extend %btn;
+  display: inline-block;
+  margin-top: 30px;
+  margin-bottom: 118px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+
+  &:hover,
+  &:focus {
+    color: $accent-cl;
+    background-color: $white;
+    transition: 250ms $cubic;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 200px;
+  }
+}

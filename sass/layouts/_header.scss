@@ -1,0 +1,110 @@
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+}
+
+.menu .list {
+  display: flex;
+}
+
+.header {
+  & .logo {
+    margin-right: 90px;
+  }
+
+  &-portfolio {
+    border-bottom: 1px solid $border-header;
+  }
+}
+
+.menu-item {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: $black;
+
+  &:not(:last-child) {
+    margin-right: 50px;
+  }
+
+  & .link {
+    display: block;
+    /* Паддинги добавлены для большей области действия ховера */
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.current {
+  position: relative;
+  color: $accent-cl;
+
+  &::after {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+
+    content: "";
+    display: block;
+    width: 100%;
+    height: 4px;
+    background-color: $accent-cl;
+    border-radius: 2px;
+  }
+}
+
+.cont {
+  display: flex;
+  margin-left: auto;
+
+  &-item:not(:last-child) {
+    margin-right: 50px;
+  }
+}
+
+.contacts-header {
+  display: flex;
+  align-items: center;
+  /* Паддинги добавлены для большей области действия ховера */
+  padding-top: 32px;
+  padding-bottom: 32px;
+
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+}
+
+.envelope-svg {
+  height: 12px;
+  width: 16px;
+  margin-right: 10px;
+  fill: $icon;
+}
+
+.smartphone-svg {
+  height: 16px;
+  width: 10px;
+  margin-right: 10px;
+  fill: $icon;
+}
+
+.contacts-header:hover,
+.contacts-header:focus {
+  border-color: $accent-cl;
+  transition: 250ms $cubic;
+}
+
+.contacts-header:hover .envelope-svg,
+.contacts-header:focus .envelope-svg,
+.contacts-header:hover .smartphone-svg,
+.contacts-header:focus .smartphone-svg {
+  fill: $accent-cl;
+  transition: 250ms $cubic;
+}

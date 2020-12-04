@@ -1,0 +1,91 @@
+/* Форма для рассылки в футере */
+
+.subscribe {
+  @media screen and (min-width: 1200px) {
+    margin-left: 93px;
+  }
+}
+
+.subscribe .advantage-lable {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 60px;
+  }
+}
+
+.subscribe-mail {
+  padding-left: 16px;
+
+  height: 50px;
+  width: 100%;
+
+  font-size: 16px;
+  line-height: 1.25;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  background-color: transparent;
+  color: $white;
+
+  @media screen and (min-width: 480px) {
+    width: 450px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 358px;
+  }
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border: 1px solid $accent-cl;
+  }
+}
+
+// Кпопка "Подписаться"
+.subscribe-btn {
+  @extend %btn;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 12px;
+  margin-top: 20px;
+
+  height: 50px;
+  width: 200px;
+
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+
+  &-svg {
+    margin-left: 10px;
+    width: 24px;
+    height: 24px;
+    fill: $white;
+    background-color: transparent;
+  }
+
+  &:hover,
+  &:focus {
+    color: $accent-cl;
+    background-color: $white;
+    transition: 250ms $cubic;
+  }
+}
+
+.subscribe-btn:hover .subscribe-btn-svg,
+.subscribe-btn:focus .subscribe-btn-svg {
+  fill: $accent-cl;
+  transition: 250ms $cubic;
+}
+
+/* Оформление автозаполнения */
+
+.subscribe-mail:-webkit-autofill,
+.subscribe-mail:-webkit-autofill:hover,
+.subscribe-mail:-webkit-autofill:focus {
+  -webkit-text-fill-color: $white;
+  -webkit-box-shadow: 0 0 0px 1000px $bg-dark inset;
+}

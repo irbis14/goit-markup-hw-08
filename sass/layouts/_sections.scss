@@ -1,0 +1,253 @@
+/* Наши преимущества */
+.section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 95px;
+    padding-bottom: 95px;
+  }
+}
+
+.grid {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -30px;
+  }
+}
+
+.advantage-item {
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.advantage-item:not(:last-child) {
+  margin-bottom: 30px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
+}
+
+.advantage-lable {
+  margin-bottom: 10px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.42;
+  text-transform: uppercase;
+  color: $black;
+}
+
+.advantage-icon::before {
+  display: flex;
+  content: "";
+  height: 120px;
+  width: 100%;
+  margin-bottom: 30px;
+
+  background: $bg-gray;
+  border-radius: 4px;
+
+  background-size: 70px;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  @media screen and (min-width: 768px) {
+    width: 354px;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 270px;
+  }
+}
+
+.advantage-icon:nth-child(1)::before {
+  background-image: url("../image/logo/antenna.svg");
+}
+
+.advantage-icon:nth-child(2)::before {
+  background-image: url("../image/logo/clock.svg");
+}
+
+.advantage-icon:nth-child(3)::before {
+  background-image: url("../image/logo/diagram.svg");
+}
+
+.advantage-icon:nth-child(4)::before {
+  background-image: url("../image/logo/astronaut.svg");
+}
+
+/* Чем мы занимаемся */
+.section-example {
+  padding-bottom: 95px;
+
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
+}
+
+.section-title {
+  margin-bottom: 30px;
+
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 1.178;
+  text-align: center;
+  color: $black;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.16;
+  }
+}
+
+.section-grid {
+  position: relative;
+
+  margin-right: 30px;
+  flex-basis: calc(100% / 3 - 30px);
+
+  & .advantage-lable {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+
+    padding-top: 27px;
+    padding-bottom: 27px;
+    margin-bottom: 0;
+
+    text-align: center;
+    background: rgba(47, 48, 58, 0.8);
+    color: $white;
+  }
+}
+
+/* Наша команда */
+
+.card-grid {
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+  background: $white;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    flex-basis: calc(100% / 2 - 30px);
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    flex-basis: calc(100% / 4 - 30px);
+  }
+}
+
+.card-grid:not(:last-child) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.card-grid:not(:nth-last-child(-n + 2)) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+
+.team-member {
+  margin-top: 30px;
+  margin-bottom: 10px;
+
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.187;
+  color: $black;
+}
+
+.team-job {
+  margin-bottom: 16px;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.187;
+}
+
+/* Постоянные клиенты */
+
+.clients-grid-mobie {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -30px;
+}
+
+.clients-grid {
+  margin-right: 30px;
+  flex-basis: calc(100% / 2 - 30px);
+
+  @media screen and (min-width: 768px) {
+    margin-right: 30px;
+    flex-basis: calc(100% / 3 - 30px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 30px;
+    flex-basis: calc(100% / 6 - 30px);
+  }
+}
+
+.clients-grid:not(:nth-last-child(-n + 2)) {
+  @media screen and (max-width: 767px) {
+    margin-bottom: 30px;
+  }
+}
+
+.clients-grid:not(:nth-last-child(-n + 3)) {
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 30px;
+  }
+}
+
+.clients-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 210px;
+  height: 90px;
+  text-align: center;
+  border: 1px solid $icon;
+  border-radius: 4px;
+
+  @media screen and (min-width: 768px) {
+    width: 226px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 170px;
+  }
+}
+
+.clients-icons-svg {
+  height: 45px;
+  fill: $icon;
+}
+
+.clients-link:hover,
+.clients-link:focus {
+  border-color: $accent-cl;
+  transition: 250ms $cubic;
+
+  & .clients-icons-svg {
+    fill: $accent-cl;
+    transition: 250ms $cubic;
+  }
+}

@@ -28,7 +28,7 @@
   }
 }
 
-.advantage-item:not(:last-child) {
+.advantage-item:not(:nth-last-child(-n + 2)) {
   margin-bottom: 30px;
 
   @media screen and (min-width: 1200px) {

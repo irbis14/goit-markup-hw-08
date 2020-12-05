@@ -108,17 +108,17 @@
 
     <main>
       <!-- Герой -->
-      <!-- <section class="dark-bg hero overlay">
+      <section class="dark-bg hero container overlay">
         <div class="container-hero">
           <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
           <button class="btn-hero" title="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наши преимущества -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="list grid">
@@ -152,62 +152,107 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Чем мы занимаемся -->
-      <!-- <section class="section-example">
+      <section class="section-example">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list grid">
             <li class="section-grid">
-              <img
-                src="./image/example-1.jpg"
-                alt="Создание веб-сайта"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/example/example-1.jpg    1x,
+                    ./image/example/example-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/example/example-1.jpg"
+                  alt="Создание веб-сайта"
+                  width="370"
+                />
+              </picture>
               <div>
                 <p class="advantage-lable">Десктопные приложения</p>
               </div>
             </li>
             <li class="section-grid">
-              <img
-                src="./image/example-2.jpg"
-                alt="Создание мобильного приложения"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/example/example-2.jpg    1x,
+                    ./image/example/example-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/example/example-2.jpg"
+                  alt="Создание мобильного приложения"
+                  width="370"
+                />
+              </picture>
               <div>
                 <p class="advantage-lable">Мобильные приложения</p>
               </div>
             </li>
             <li class="section-grid">
-              <img
-                src="./image/example-3.jpg"
-                alt="Графический дизайн"
-                width="370"
-                height="294"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/example/example-3.jpg    1x,
+                    ./image/example/example-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./image/example/example-3.jpg"
+                  alt="Графический дизайн"
+                  width="370"
+                />
+              </picture>
               <div>
                 <p class="advantage-lable">Дизайнерские решения</p>
               </div>
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Наша команда -->
-      <!-- <section class="gray-bg section">
+      <section class="gray-bg section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list grid">
             <li class="card-grid">
-              <img
-                src="./image/people-1.jpg"
-                alt="Игорь Демьяненко"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team/desktop-team-1.jpg    1x,
+                    ./image/team/desktop-team-1@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/tablet-team-1.jpg    1x,
+                    ./image/team/tablet-team-1@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/mobile-team-1.jpg    1x,
+                    ./image/team/mobile-team-1@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/team/mobile-team-1.jpg"
+                  alt="Игорь Демьяненко"
+                />
+              </picture>
               <h3 class="team-member">Игорь Демьяненко</h3>
               <p class="team-job" lang="en">Product Designer</p>
               <ul class="list join-list social-icons">
@@ -267,12 +312,30 @@
             </li>
 
             <li class="card-grid">
-              <img
-                src="./image/people-2.jpg"
-                alt="Ольга Репина"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team/desktop-team-2.jpg    1x,
+                    ./image/team/desktop-team-2@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/tablet-team-2.jpg    1x,
+                    ./image/team/tablet-team-2@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/mobile-team-2.jpg    1x,
+                    ./image/team/mobile-team-2@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img src="./image/team/mobile-team-2.jpg" alt="Ольга Репина" />
+              </picture>
               <h3 class="team-member">Ольга Репина</h3>
               <p class="team-job" lang="en">Frontend Developer</p>
               <ul class="list join-list social-icons">
@@ -332,12 +395,33 @@
             </li>
 
             <li class="card-grid">
-              <img
-                src="./image/people-3.jpg"
-                alt="Николай Тарасов"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team/desktop-team-3.jpg    1x,
+                    ./image/team/desktop-team-3@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/tablet-team-3.jpg    1x,
+                    ./image/team/tablet-team-3@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/mobile-team-3.jpg    1x,
+                    ./image/team/mobile-team-3@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/team/mobile-team-3.jpg"
+                  alt="Николай Тарасов"
+                />
+              </picture>
               <h3 class="team-member">Николай Тарасов</h3>
               <p class="team-job" lang="en">Marketing</p>
               <ul class="list join-list social-icons">
@@ -397,12 +481,33 @@
             </li>
 
             <li class="card-grid">
-              <img
-                src="./image/people-4.jpg"
-                alt="Михаил Ермаков"
-                width="270"
-                height="260"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./image/team/desktop-team-4.jpg    1x,
+                    ./image/team/desktop-team-4@2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/tablet-team-4.jpg    1x,
+                    ./image/team/tablet-team-4@2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    ./image/team/mobile-team-4.jpg    1x,
+                    ./image/team/mobile-team-4@2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <img
+                  src="./image/team/mobile-team-4.jpg"
+                  alt="Михаил Ермаков"
+                />
+              </picture>
               <h3 class="team-member">Михаил Ермаков</h3>
               <p class="team-job" lang="en">UI Designer</p>
               <ul class="list join-list social-icons">
@@ -462,10 +567,10 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
 
       <!-- Постоянные клиенты -->
-      <!-- <section class="section">
+      <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="list grid clients-grid-mobie">
@@ -513,11 +618,11 @@
             </li>
           </ul>
         </div>
-      </section> -->
+      </section>
     </main>
 
     <!-- Подвал -->
-    <!-- <footer id="contacts" class="dark-bg footer">
+    <footer id="contacts" class="dark-bg footer">
       <div class="container">
         <div class="footer-contacts">
           <a href="./" class="link logo"><span>Web</span>Studio</a>
@@ -617,7 +722,7 @@
           </button>
         </form>
       </div>
-    </footer> -->
+    </footer>
 
     <div class="backdrop is-hidden" data-modal>
       <div class="modal">

@@ -16,11 +16,11 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <!-- <header class="header">
+    <header class="header">
       <div class="container main-nav">
         <nav class="menu">
           <a href="./" class="link logo"><span>Web</span>Studio</a>
-          <ul class="list">
+          <ul class="list menu-list">
             <li class="menu-item">
               <a href="./" class="link menu-item current">Студия</a>
             </li>
@@ -31,6 +31,24 @@
               <a href="#contacts" class="link menu-item">Контакты</a>
             </li>
           </ul>
+          <button type="button" class="mobile-menu-btn" data-menu-button>
+            <svg
+              class="mobile-menu-svg"
+              widht="40"
+              heigh="40"
+              aria-label="Переключатель мобильного меню"
+              aria-controls="mobile-main-nav"
+            >
+              <use
+                class="icon-menu"
+                href="./image/logo/sprite.svg#menu-open"
+              ></use>
+              <use
+                class="icon-cross"
+                href="./image/logo/sprite.svg#menu-close"
+              ></use>
+            </svg>
+          </button>
         </nav>
         <ul class="list cont">
           <li class="cont-item">
@@ -51,21 +69,56 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-main-nav" id="mobile-main-nav" data-menu>
+      <nav class="">
+        <ul class="list mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a href="./" class="link menu-item current">Студия</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="./portfolio.html" class="link menu-item">Портфолио</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#contacts" class="link menu-item">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list mobile-cont">
+        <li class="mobile-cont-item">
+          <a href="mailto:info@devstudio.com" class="link contacts-header">
+            <svg class="envelope-svg">
+              <use href="./image/logo/sprite.svg#envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="mobile-cont-item">
+          <a href="tel:+380961111111" class="link contacts-header">
+            <svg class="smartphone-svg">
+              <use href="./image/logo/sprite.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </div>
 
     <main>
       <!-- Герой -->
-      <section class="dark-bg hero overlay">
+      <!-- <section class="dark-bg hero overlay">
         <div class="container-hero">
           <h1 class="page-title">Эффективные решения для вашего бизнеса</h1>
           <button class="btn-hero" title="button" data-modal-open>
             Заказать услугу
           </button>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наши преимущества -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="visually-hidden">Наши преимущества</h2>
           <ul class="list grid">
@@ -99,10 +152,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Чем мы занимаемся -->
-      <section class="section-example">
+      <!-- <section class="section-example">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="list grid">
@@ -141,10 +194,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Наша команда -->
-      <section class="gray-bg section">
+      <!-- <section class="gray-bg section">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
           <ul class="list grid">
@@ -409,10 +462,10 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
 
       <!-- Постоянные клиенты -->
-      <section class="section">
+      <!-- <section class="section">
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="list grid clients-grid-mobie">
@@ -460,11 +513,11 @@
             </li>
           </ul>
         </div>
-      </section>
+      </section> -->
     </main>
 
     <!-- Подвал -->
-    <footer id="contacts" class="dark-bg footer">
+    <!-- <footer id="contacts" class="dark-bg footer">
       <div class="container">
         <div class="footer-contacts">
           <a href="./" class="link logo"><span>Web</span>Studio</a>
@@ -564,9 +617,9 @@
           </button>
         </form>
       </div>
-    </footer>
+    </footer> -->
 
-    <!-- <div class="backdrop is-hidden" data-modal>
+    <div class="backdrop is-hidden" data-modal>
       <div class="modal">
         <button data-modal-close class="btn-modal" title="button">
           <svg class="btn-modal-svg">
@@ -625,8 +678,9 @@
           </ul>
         </form>
       </div>
-    </div> -->
+    </div>
 
-    <!-- <script src="./js/modal.js"></script> -->
+    <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

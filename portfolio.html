@@ -16,7 +16,7 @@
   </head>
   <body>
     <!-- Шапка сайта -->
-    <!-- <header class="header header-portfolio">
+    <header class="header header-portfolio">
       <div class="container main-nav">
         <nav class="menu">
           <a href="./" class="link logo"><span>Web</span>Studio</a>
@@ -33,6 +33,24 @@
               <a href="#contacts" class="link menu-item">Контакты</a>
             </li>
           </ul>
+          <button type="button" class="mobile-menu-btn" data-menu-button>
+            <svg
+              class="mobile-menu-svg"
+              widht="40"
+              heigh="40"
+              aria-label="Переключатель мобильного меню"
+              aria-controls="mobile-main-nav"
+            >
+              <use
+                class="icon-menu"
+                href="./image/logo/sprite.svg#menu-open"
+              ></use>
+              <use
+                class="icon-cross"
+                href="./image/logo/sprite.svg#menu-close"
+              ></use>
+            </svg>
+          </button>
         </nav>
         <ul class="list cont">
           <li class="cont-item">
@@ -53,7 +71,42 @@
           </li>
         </ul>
       </div>
-    </header> -->
+    </header>
+
+    <!-- Мобильное меню -->
+    <div class="mobile-main-nav" id="mobile-main-nav" data-menu>
+      <nav class="">
+        <ul class="list mobile-menu-list">
+          <li class="mobile-menu-item">
+            <a href="./" class="link menu-item current">Студия</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="./portfolio.html" class="link menu-item">Портфолио</a>
+          </li>
+          <li class="mobile-menu-item">
+            <a href="#contacts" class="link menu-item">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="list mobile-cont">
+        <li class="mobile-cont-item">
+          <a href="mailto:info@devstudio.com" class="link contacts-header">
+            <svg class="envelope-svg">
+              <use href="./image/logo/sprite.svg#envelope"></use>
+            </svg>
+            info@devstudio.com</a
+          >
+        </li>
+        <li class="mobile-cont-item">
+          <a href="tel:+380961111111" class="link contacts-header">
+            <svg class="smartphone-svg">
+              <use href="./image/logo/sprite.svg#smartphone"></use>
+            </svg>
+            +38 096 111 11 11</a
+          >
+        </li>
+      </ul>
+    </div>
 
     <main>
       <!-- Примеры работ -->
@@ -390,5 +443,7 @@
         </form>
       </div>
     </footer>
+
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>

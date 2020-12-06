@@ -1,6 +1,12 @@
 /* Форма для рассылки в футере */
 
 .subscribe {
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
   @media screen and (min-width: 1200px) {
     margin-left: 93px;
   }
@@ -49,13 +55,16 @@
   display: inline-flex;
   justify-content: center;
   align-items: center;
-  margin-left: 12px;
   margin-top: 20px;
 
   height: 50px;
   width: 200px;
 
   @media screen and (min-width: 768px) {
+    margin-left: 12px;
+  }
+
+  @media screen and (min-width: 1200px) {
     margin-top: 0;
   }
 

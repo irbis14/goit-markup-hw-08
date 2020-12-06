@@ -7,7 +7,7 @@
   background: rgba(0, 0, 0, 0.2);
   transition: opacity 250ms $cubic;
 
-  padding-top: 90px;
+  padding-top: 15px;
   padding-right: 15px;
   padding-left: 15px;
 
@@ -23,6 +23,8 @@
 }
 
 .modal {
+  position: relative;
+  overflow: auto;
   padding: 40px;
   height: 609px;
   width: 100%;

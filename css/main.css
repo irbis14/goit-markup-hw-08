@@ -551,8 +551,14 @@ img {
   }
 }
 
-.advantage-item:not(:nth-last-child(-n + 2)) {
+.advantage-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .advantage-item:not(:nth-last-child(-n + 2)) {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -732,6 +738,12 @@ img {
   .clients-grid {
     margin-right: 30px;
     flex-basis: calc(100% / 6 - 30px);
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .clients-grid:not(:last-child) {
+    margin-bottom: 30px;
   }
 }
 

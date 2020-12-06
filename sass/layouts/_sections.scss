@@ -28,8 +28,14 @@
   }
 }
 
-.advantage-item:not(:nth-last-child(-n + 2)) {
+.advantage-item:not(:last-child) {
   margin-bottom: 30px;
+}
+
+.advantage-item:not(:nth-last-child(-n + 2)) {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 30px;
+  }
 
   @media screen and (min-width: 1200px) {
     margin-bottom: 0;
@@ -201,6 +207,12 @@
   @media screen and (min-width: 1200px) {
     margin-right: 30px;
     flex-basis: calc(100% / 6 - 30px);
+  }
+}
+
+.clients-grid:not(:last-child) {
+  @media screen and (max-width: 479px) {
+    margin-bottom: 30px;
   }
 }
 

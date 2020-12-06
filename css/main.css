@@ -1134,7 +1134,7 @@ img {
 /* Форма модального окна */
 .form {
   display: flex;
-  height: 342px;
+  height: 100%;
   width: 100%;
 }
 
